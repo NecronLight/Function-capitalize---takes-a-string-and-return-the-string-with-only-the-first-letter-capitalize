@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Capitalize First Letter</title>
+</head>
+
+<body>
+
+  <script>
+    function capitalize(text) {
+      return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase(); //Transform firt character on the string to UpperCase and turn the rest of the string to LowerCase
+    }
+
+    // Prompts the user to enter the text
+    const text = prompt("Enter the text: ");
+
+    // Calls the function and stores the result
+    const capitalizedText = capitalize(text);
+
+    // Displays the result in the console
+    console.log(capitalizedText);
+  </script>
+
+</body>
+
+</html>
